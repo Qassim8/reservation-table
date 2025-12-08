@@ -12,7 +12,7 @@ const Table = () => {
   ];
 
   return (
-    <div className="form-wrapper">
+    <form className="form-wrapper">
       <table className="medical-table">
         <tbody>
           <tr>
@@ -248,7 +248,7 @@ const Table = () => {
           </tr>
         </tbody>
       </table>
-    </div>
+    </form>
   );
 };
 

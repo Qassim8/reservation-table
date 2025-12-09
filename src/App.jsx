@@ -1,9 +1,9 @@
-import Table from "./component/Table";
+import NemtRequest from "./component/NemtRequest";
 
 function App() {
   return (
     <>
-      <Table />
+      <NemtRequest />
     </>
   );
 }

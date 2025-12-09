@@ -1,0 +1,274 @@
+.flex {
+  display: flex;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.grid-col-2 {
+  grid-column: span 2;
+}
+
+dd {
+  margin-inline-start: 0;
+}
+
+@media (max-width: 700px) {
+  .section-title {
+    font-size: 13px;
+  }
+  .check-group,
+  label,
+  input {
+    font-size: 10px;
+  }
+}
+
+.header {
+  padding-inline: 80px;
+  margin: 10px auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  width: 200px;
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding-inline: 5px;
+  }
+  .header .logo {
+    width: 150px;
+  }
+}
+
+.header .logo img {
+  max-width: 100%;
+}
+
+.header .title {
+  text-align: center;
+}
+
+.header .title h1 {
+  font-size: 25px;
+}
+
+@media (max-width: 700px) {
+  .header .title h1 {
+    font-size: 13px;
+  }
+  .header .title p {
+    font-size: 10px;
+  }
+}
+
+.form-wrapper {
+  padding-inline: 80px;
+  margin-inline: auto;
+  margin-block: 30px;
+}
+
+@media (max-width: 700px) {
+  .form-wrapper {
+    padding-inline: 5px;
+  }
+}
+
+.medical-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background: white;
+}
+
+.medical-table tr {
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .medical-table tr {
+    flex-direction: column;
+  }
+}
+
+.medical-table tr td {
+  border: 1px solid #000;
+  vertical-align: top;
+  flex: 1;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.field input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.field input:focus {
+  background: #f3f6ff;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.field label {
+  width: 230px;
+  border-right: 1px solid #000;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.field input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* responsive */
+@media (max-width: 700px) {
+  .field {
+    flex-direction: column;
+  }
+
+  .field label {
+    width: auto;
+    border-right: none;
+  }
+}
+
+.flex-td {
+  display: flex;
+  padding: 0;
+  gap: 0;
+}
+
+.flex-item {
+  align-items: center;
+  flex: 1;
+  border-left: 1px solid #000;
+}
+
+.flex-item:first-child {
+  border-left: none;
+}
+
+.flex-item label,
+.section-two-item label {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.flex-item input,
+.section-two-item input[type="text"],
+.section-two-item input[type="date"],
+.section-two-item input[type="time"] {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  outline: none;
+  width: 250px;
+}
+
+/* -------- Responsive -------- */
+
+@media (max-width: 700px) {
+  .flex-td {
+    flex-direction: column;
+  }
+
+  .flex-item label,
+  .section-two-item label {
+    border-right: none;
+  }
+}
+
+.medical-table label {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.medical-table table tr span {
+  flex: 1;
+}
+
+.section-title td {
+  background: #eff8ff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+@media (max-width: 700px) {
+  .section-title td {
+    padding: 10px 0;
+  }
+}
+
+.full-row td {
+  background: #fafafa;
+  display: flex;
+}
+
+.check-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.time-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 5px;
+}
+
+.services-grid label {
+  padding: 8px 0;
+  border: 1px solid #000;
+  margin-bottom: 0;
+}
+@media (max-width: 700px) {
+  .services-grid label {
+    grid-column: 1 span;
+  }
+}
+.signature-row input {
+  border-bottom: 1px solid #000 !important;
+  margin: 10px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 700px) {
+  .medical-table tr td {
+    display: block;
+  }
+
+  .section-title td {
+    text-align: center;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

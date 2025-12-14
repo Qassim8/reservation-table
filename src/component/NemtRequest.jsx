@@ -18,17 +18,17 @@ const NemtRequest = () => {
   return (
     <div>
       <nav className="header">
-        <div className="logo flex-1">
+        <div className="logo">
           <img src={firstLogo} alt="first-logo" />
         </div>
-        <div className="title flex-1">
+        <div className="title">
           <p>DEVELOPMENTAL DISABILITIES ADMINISTRATION (DDA)</p>
           <h1>
             Non-Emergency Medical Transportation (NEMT) for PASRR Program
             Request
           </h1>
         </div>
-        <div className="logo flex-1">
+        <div className="logo second-logo">
           <img src={secondLogo} alt="second-logo" />
         </div>
       </nav>
@@ -269,6 +269,10 @@ const NemtRequest = () => {
           </tbody>
         </table>
       </form>
+
+      <button onClick={() => window.print()} className="print-btn">
+        Print
+      </button>
     </div>
   );
 };

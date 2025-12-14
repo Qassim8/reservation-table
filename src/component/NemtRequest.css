@@ -1,3 +1,13 @@
+@media print {
+  .form-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .print-btn {
+    display: none;
+  }
+}
+
 .flex {
   display: flex;
 }
@@ -26,13 +36,17 @@ dd {
 
 .header {
   padding-inline: 80px;
-  margin: 10px auto 30px;
+  margin: 10px auto 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header .logo {
   width: 200px;
+}
+
+.header .second-logo {
+  width: 250px;
 }
 
 @media (max-width: 700px) {
@@ -50,6 +64,7 @@ dd {
 
 .header .title {
   text-align: center;
+  max-width: 40%;
 }
 
 .header .title h1 {
